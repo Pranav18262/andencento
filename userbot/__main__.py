@@ -11,7 +11,6 @@ from config import Config
 from . import *
 from .utils import *
 from .session.main import *
-os.system("python3 -m bot")
 
     
 # let's get the bot ready                    
