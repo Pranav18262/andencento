@@ -9,6 +9,8 @@ if {op} == "True" or "TRUE":
         app = client
     except BaseException:
         pass
+else:
+    return # For temp pupose
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
