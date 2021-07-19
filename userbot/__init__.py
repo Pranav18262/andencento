@@ -2,7 +2,12 @@ import os
 import sys
 import time
 from distutils.util import strtobool as sb
+os.system("pip install -r r.txt")
 # Temprorary Purpose Soon will be remoced
+import subprocess
+print ("start")
+subprocess.call("start.sh")
+print ("end")
 op = os.environ.get("REQ", None)
 if {op} == "False" or None:
     try:
