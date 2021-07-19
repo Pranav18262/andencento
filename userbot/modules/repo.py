@@ -14,7 +14,7 @@ add_command_help(
 
 @app.on_message (filters.command("repo", PREFIX) & filters.me)
 async def repo(_, message: Message):
-    texmt = f"[Repo🔥Stable](https://github.com/GODBOYX/PYROGOD) [Deploy🔥Stable](https://dashboard.heroku.com/new?template=https://github.com/GODBOYX/PyroPack)\n[Repo⚡Beta](https://github.com/GODBOYX/PyroGod-Beta) [Deploy⚡Beta](https://dashboard.heroku.com/new?template=https://github.com/GODBOYX/PyroPack-Beta)"
+    texmt = f"[Repo🔥Stable](https://github.com/Noob-Stranger/andencento)"
     await message.delete()
     await app.send_message(message.chat.id, texmt, disable_web_page_preview=True)
  
