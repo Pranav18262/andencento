@@ -10,6 +10,7 @@ if {op} == "True" or "TRUE":
     app = client
 else:
     exit
+
 """
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
@@ -206,7 +207,7 @@ COMMAND_HAND_LER = os.environ.get("HANDLER", ".")
 
 class CmdHelp:
     """
-    The class I wrote to better generate command aids.
+    # Hello
     """
 
     FILE = ""
@@ -237,7 +238,7 @@ class CmdHelp:
 
     def add_command(self, command: str, params=None, usage: str = "", example=None):
         """
-        Inserts commands..
+        #Inserts commands..
         """
 
         self.COMMANDS[command] = {
@@ -258,7 +259,7 @@ class CmdHelp:
 
     def get_result(self):
         """
-        Brings results.
+        #Brings results.
         """
 
         result = f"**📗 File :** `{self.FILE}`\n"
@@ -293,7 +294,7 @@ class CmdHelp:
 
     def add(self):
         """
-        Directly adds CMD_HELP.
+        #Directly adds CMD_HELP.
         """
         CMD_HELP_BOT[self.FILE] = {
             "info": {
