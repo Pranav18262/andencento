@@ -8,6 +8,7 @@ if {op} == "True" or "TRUE":
     app = client
 else:
     exit
+"""
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
@@ -481,3 +482,4 @@ for binary, path in binaries.items():
     downloader = SmartDL(binary, path, progress_bar=False)
     downloader.start()
     os.chmod(path, 0o755)
+"""
