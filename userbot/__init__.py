@@ -10,7 +10,7 @@ if {op} == "True" or "TRUE":
     except BaseException:
         pass
 else:
-    return # For temp pupose
+    exit
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
