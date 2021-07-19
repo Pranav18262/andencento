@@ -9,7 +9,7 @@ if {PYRO} == "True":
     app.run()
 else:
     exit
-
+"""
 import glob
 import os
 import sys
@@ -62,3 +62,4 @@ if len(sys.argv) not in (1, 3, 4):
 else:
     Andencento.run_until_disconnected()
     noob.run_until_disconnected()
+"""
