@@ -3,12 +3,9 @@ import sys
 import time
 op = os.environ.get("PYRO", None)
 if {op} == "True" or "TRUE":
-    try:
-        os.system("pip install -r pyro.txt")
-        from userbot.pyrogram import *
-        app = client
-    except BaseException:
-        pass
+    os.system("pip install -r pyro.txt")
+    from userbot.pyrogram import *
+    app = client
 else:
     exit
 from distutils.util import strtobool as sb
