@@ -6,9 +6,6 @@ from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
 os.system("pip3 install -r r.txt")
 from subprocess import STDOUT, check_call
-import os
-check_call(['apt-get', 'install', '-y', 'ffmpeg python3-pip curl'],
-           stdout=open(os.devnull,'wb'), stderr=STDOUT)
 from dotenv import load_dotenv
 from requests import get
 from telethon import TelegramClient
