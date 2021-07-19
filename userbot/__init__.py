@@ -9,7 +9,6 @@ if {op} == "False" or None:
         os.system("pip install -r requirements.txt")
     except BaseException:
         pass
-os.system("pip install -r vcreq.txt")
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
 from dotenv import load_dotenv
