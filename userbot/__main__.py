@@ -11,7 +11,7 @@ from config import Config
 from . import *
 from .utils import *
 from .session.main import *
-os.system("python3 -m vcbot/bot.py")
+os.system("python3 -m vcbot/bot")
 
     
 # let's get the bot ready                    
