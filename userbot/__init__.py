@@ -2,14 +2,13 @@ import os
 import sys
 import time
 op = os.environ.get("PYRO", None)
-if {op} == "False" or None:
+if {op} == "True" or "TRUE":
     try:
-        os.system("pip install -r requirements.txt")
+        os.system("pip install -r pyro.txt")
         from userbot.pyrogram import *
         app = client
     except BaseException:
         pass
-os.system("pip install -r pyro.txt")
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
