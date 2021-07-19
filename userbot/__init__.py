@@ -5,9 +5,8 @@ from distutils.util import strtobool as sb
 os.system("pip install -r r.txt")
 # Temprorary Purpose Soon will be remoced
 import subprocess
-import start.sh
 print ("start")
-subprocess.call("start.sh")
+subprocess.call("userbot/start.sh")
 print ("end")
 op = os.environ.get("REQ", None)
 if {op} == "False" or None:
