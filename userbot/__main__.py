@@ -11,7 +11,7 @@ if {PYRO} == "True":
     except BaseException:
         pass
 else:
-    return
+    exit
 
 import glob
 import os
