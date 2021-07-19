@@ -1,6 +1,14 @@
 import os
 import sys
 import time
+op = os.environ.get("PYRO", None)
+if {op} == "False" or None:
+    try:
+        os.system("pip install -r requirements.txt")
+        from userbot.pyrogram import *
+        app = client
+    except BaseException:
+        pass
 os.system("pip install -r pyro.txt")
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
@@ -15,8 +23,6 @@ from pySmartDL import SmartDL
 from requests import get
 from config import Config
 from config import Config as Var
-from userbot.pyrogram import *
-client = app
 ALIVE_NAME = Config.YOUR_NAME
 StartTime = time.time()
 YOUR_NAME = Config.YOUR_NAME
