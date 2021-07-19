@@ -13,7 +13,7 @@ from .utils import *
 from .session.main import *
 if {vc} == "True":
     try:
-        python3 -m vcbot/bot.py
+        os.system("python3 -m vcbot/bot.py")
     except BaseException:
         pass
     
