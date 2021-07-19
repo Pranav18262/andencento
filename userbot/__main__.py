@@ -4,18 +4,15 @@ import os
 import sys
 from pathlib import Path
 from sys import argv
-vc = os.environ.get(VC, None)
+
 import telethon.utils
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 from config import Config
 from . import *
 from .utils import *
 from .session.main import *
-if {vc} == "True":
-    try:
-        os.system("python3 -m vcbot/bot.py")
-    except BaseException:
-        pass
+os.system("python3 -m vcbot/bot.py")
+
     
 # let's get the bot ready                    
 async def add_bot(bot_token):
