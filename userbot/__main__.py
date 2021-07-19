@@ -1,5 +1,5 @@
 import os
-os.environ.get("PYRO", None)
+PYRO = os.environ.get("PYRO", None)
 if {PYRO} == "True":
     from pyrogram import idle, Client, filters
     from userbot import app, LOGGER
