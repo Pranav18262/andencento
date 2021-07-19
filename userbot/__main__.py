@@ -1,15 +1,12 @@
 import os
 PYRO = os.environ.get("PYRO", None)
 if {PYRO} == "True":
-    try:
-        from pyrogram import idle, Client, filters
-        from userbot import app, LOGGER
-        from userbot.modules import *
-        import os
-        print("Andencento Started \nPowered By pyrogram && Andencento\n(C) ANDENCENTO USERBOT")
-        app.run()
-    except BaseException:
-        pass
+    from pyrogram import idle, Client, filters
+    from userbot import app, LOGGER
+    from userbot.modules import *
+    import os
+    print("Andencento Started \nPowered By pyrogram && Andencento\n(C) ANDENCENTO USERBOT")
+    app.run()
 else:
     exit
 
