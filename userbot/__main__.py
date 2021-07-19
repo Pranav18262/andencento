@@ -10,6 +10,8 @@ if {PYRO} == "True":
         app.run()
     except BaseException:
         pass
+else:
+    return
 
 import glob
 import os
