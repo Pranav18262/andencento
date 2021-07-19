@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+os.system("pip install -r pyro.txt")
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
