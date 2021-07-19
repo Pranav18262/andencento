@@ -7,9 +7,9 @@ if {PYRO} == "True":
         from userbot.modules import *
         import os
         print("Andencento Started \nPowered By pyrogram && Andencento\n(C) ANDENCENTO USERBOT")
-        app.run() 
-except BaseException:
-    pass
+        app.run()
+    except BaseException:
+        pass
 
 import glob
 import os
