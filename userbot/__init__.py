@@ -4,8 +4,6 @@ import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
-os.system("pip3 install -r r.txt")
-from subprocess import STDOUT, check_call
 from dotenv import load_dotenv
 from requests import get
 from telethon import TelegramClient
