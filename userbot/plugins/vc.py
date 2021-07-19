@@ -4,7 +4,7 @@ from userbot import *
 ))
 async def _(e):
     zz = await eor(e, "`VC bot started...`")
-    er, out = await bash("python userbot/bot.py")
+    er, out = await bash("python vcbot/bot.py")
     LOGS.info(er)
     LOGS.info(out)
     if er:
