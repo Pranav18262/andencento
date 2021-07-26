@@ -1,4 +1,4 @@
-from userbot.config import Config
+from config import Config
 class Config(Config):
     # get this values from the my.telegram.org
     APP_ID = 6
