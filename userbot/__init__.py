@@ -3,12 +3,6 @@ import sys
 import time
 from distutils.util import strtobool as sb
 # Temprorary Purpose Soon will be remoced
-op = os.environ.get("REQ", None)
-if {op} == "False" or None:
-    try:
-        os.system("pip install -r requirements.txt")
-    except BaseException:
-        pass
 from logging import DEBUG, INFO, basicConfig, getLogger
 import heroku3
 from dotenv import load_dotenv
@@ -19,8 +13,8 @@ ENV = os.environ.get("ENV", False)
 import pylast
 from pySmartDL import SmartDL
 from requests import get
-from .config.var import Config
-from .config.var import Config as Var
+from .config import Config
+from .config import Config as Var
 ALIVE_NAME = Config.YOUR_NAME
 StartTime = time.time()
 YOUR_NAME = Config.YOUR_NAME
