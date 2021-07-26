@@ -1,1 +1,1 @@
-from exampleconfig import Development as Config
+from .config import Development as Config
