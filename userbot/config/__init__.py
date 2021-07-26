@@ -1,1 +1,1 @@
-from .var import Config
+from exampleconfig import Development as Config
