@@ -138,9 +138,6 @@ class Production(Config):
     LOGGER = False
 
 
-class Development(Config):
-    LOGGER = True
-
     
     
 import os
