@@ -19,8 +19,8 @@ ENV = os.environ.get("ENV", False)
 import pylast
 from pySmartDL import SmartDL
 from requests import get
-from .config import Config
-from .config import Config as Var
+from .config.var import Config
+from .config.var import Config as Var
 ALIVE_NAME = Config.YOUR_NAME
 StartTime = time.time()
 YOUR_NAME = Config.YOUR_NAME
